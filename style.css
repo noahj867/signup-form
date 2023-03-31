@@ -1,6 +1,25 @@
 @font-face {
-    font-family: 'MyWebFont';
-    src: url("Norse-Bold.otf") format(otf);
+    font-family: Rubik;
+    src: url(fonts/OFL.txt), url(fonts/Rubik-Italic-VariableFont_wght.ttf), url(fonts/Rubik-VariableFont_wght.ttf)
+}
+@font-face {
+    font-family: NorseBold;
+    src: url(fonts/Norse-Bold.otf);
+}
+
+html, Body {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+* :not(.container):not(.form-section):not(.logo-section):not(.logo):not(img):not(.text-logo):not(.signup-form):not(.bottom-section):not(body):not(label):not(.input-wrapper):not(em){
+    padding: 10px;
+}
+
+body:not(.text-logo){
+    font-family: Rubik;
+    background-color: rgb(247, 247, 247);
 }
 
 main {
@@ -9,4 +28,99 @@ main {
 
 .logo-section {
     background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+    background-size: cover;
+    width: 70vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
 }
+
+.logo {
+    background-color: rgba(14, 13, 13, 0.447);
+    background-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 200px;
+    padding: 20px 0px 20px 0px;
+}
+
+img {
+    width: 100px;
+}
+
+.text-logo {
+    color: white;
+    font-size: 100px;
+    font-family: NorseBold;
+    font-weight: bold;
+}
+
+h2 {
+    margin-left: 10px;
+}
+
+h1.text-logo {
+    margin: 0px;
+}
+
+
+.form-section {
+    padding-top: 100px;
+}
+
+.user-input {
+    box-shadow: rgb(183, 182, 182) 0 3px 3px ; 
+    border: none;
+    background-color: white;
+    padding: 0px;
+    margin: 0px;
+    margin-right: 0px;
+}
+
+.user-input > * {
+    margin-left: 10px;
+}
+
+.names, .email-phone, .password{
+    display: flex;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-section {
+    padding: 0px;
+    margin: 0px;
+}
+
+button {
+    margin: 30px 30px;
+    width: 200px;
+}
+
+input:focus {
+    box-shadow: 0px 1px 2px black;
+    border-color: blue;
+}
+
+input {
+    border: black solid;
+    background: none;
+    outline: none;
+    border-radius: 5px;
+    width: 300px;
+    margin-right: 60px;
+    border-width: 1px;
+    border-style: inset;
+}
+
+.create-account {
+    background-color: #596D48;
+    border-radius: 5px;
+    color: white;
+}
+

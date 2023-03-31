@@ -6,60 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css"/>
+    <script src="sp.js" defer></script>
 </head>
 <body>
     <main class="container">   
         <div class="logo-section">
             <div class="logo">      
                 <img src="images/odin-lined.png" alt="pic">
-                <h1>Odin</h1>
+                <h1 class="text-logo">Odin</h1>
             </div>  
         </div>
         <div class="form-section">
             <header class="signup-form-header">
-                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. You know you want to.</h1>
+                <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. You know you want to. <br> <br>
+                You<em> know </em>you want to.</h2>
             </header>
             <form action="" method="get" class="signup-form">
                 <fieldset class="user-input">
-                    <div class="names">
-                        <h1>Let's do this!</h1>
-                        <label for="first-name">First Name</label>
-                        <input id="first-name"
-                                name="first-name"
-                                type="text" 
-                                placeholder="Thor">
-                        <label for="last-name">Last Name</label>
-                        <input id="last-name" 
-                                name="last-name" placeholder="Odinson" 
-                                type="text">
+                    <h2>Let's do this!</h2>
+                    <div class="names"> 
+                        <div class="input-wrapper">
+                            <label for="first-name">First Name</label>
+                            <input id="first-name"
+                                    name="first-name"
+                                    type="text" 
+                                    placeholder="Thor">
+                        </div>
+                            <div class="input-wrapper">
+                                <label for="last-name">Last Name</label>
+                                <input id="last-name"
+                                        name="last-name" placeholder="Odinson"
+                                        type="text">
+                            </div>
+                        
                     </div>
                     <div class="email-phone">
-                        <label for="email">Email</label>
-                        <input id="email" 
-                                name="email"
-                                type="email"
-                                required>
-                        <label for="phone-number">Phone Number</label>
-                        <input id="phone-number" 
-                                name="phone-number"
-                                type="number"
-                                required>
+                        <div class="input-wrapper">
+                            <label for="email">Email</label>
+                            <input id="email"
+                                    name="email"
+                                    type="email"
+                                    required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="phone-number">Phone Number</label>
+                            <input id="phone-number"
+                                    name="phone-number"
+                                    type="tel"
+                                    required>
+                        </div>
                     </div>
                     <div class="password">
-                        <label for="password">Password</label>
-                        <input id="password" 
-                                name="password" 
-                                required>
-                        <label for="confirm-password">Confirm Password</label>
-                        <input id="confirm-password"
-                                name="confirm-password" 
-                                required>
+                        <div class="input-wrapper">
+                            <label for="password">Password</label>
+                            <input id="password"
+                                    name="password"
+                                    required>
+                        </div>
+                        <div class="input-wrapper">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input id="confirm-password"
+                                    name="confirm-password"
+                                    required>
+                        </div>
                     </div>
                 </fieldset>
             </form>
             <div class="bottom-section">
                 <button class="create-account">Create Account</button>
-                <div>Already have an account? Log in</div>            
+                <div style="margin-left: 20px;"> Already have an account? Log in</div>            
             </div>
         </div>
     </main>
